@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timer {
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    gap: 30px;
+    font-weight: bold;
+    z-index: 5;
+  }
+  
+  .timer-display {
+    margin-bottom: 1rem;
+    display: none;
+  }
+  .question{
+      min-height: 400px;
+      max-width: 1000px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px 20px;
+    
+
+}
+.question input{
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+button{
+    cursor: pointer;
+}
+.start-p{
+    width: 60%;
+    min-height: 120px;
+    padding: 10px;
+    color: rgb(49, 42, 42);
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.game-page{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.game-page-con{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+    color: rgb(49, 42, 42);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.sbmtbtn{
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: rgb(204, 137, 36);
+    color: white;
+}.start-btn{
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: rgb(204, 137, 36);
+    color: white;
+}
+.netice{
+display: none;
+flex-direction: column;
+height: 200px;
+width: 400px;
+background-color: white;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.game-page-bg{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+}
+.link-page{
+    text-align: center;
+}
+.link-page a{
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: rgb(254, 13, 226);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.netice-div{
+display: none;
+}
+.finish-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://preview.redd.it/0bb6dqsiab451.gif?s=b0c65596a54a30708da26669da6e79abf3be1680");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finish{
+    min-height: 200px;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px 20px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.joker{
+    height: 60px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: rgb(209, 148, 148);
+}
+.joker-menu{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.neticeTimer{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .question h2{
+        font-size: 2rem;
+    }
+  }
+  .Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tr{
+    display: none;
+  }
+  .languages{
+    height: 12%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    left: 20px;
+    bottom: 0;
+  }
+  .languages button{
+    height: 40%;
+    width: 100%;
+  }
+
+  .lang{
+    height: 30%;
+    width: 100%;
+    color:  rgb(254, 13, 226);
+    background-color: rgb(185, 158, 182);
+    border-width: 0;
+    border-radius: 5px;
+    height: 100%;
+
+    
+  }
+  .button{
+    display: none;
+  }
